@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style>
+    body {
+      position: relative;
+      width: 1440px;
+      height: 740px;
+      background: #393E46;
+    }
+    .title{
+      position: absolute;
+      font-weight: bold;
+      width: 343px;
+      height: 23px;
+      left: 583px;
+      top: 65px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 45px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .showtext{
+      position: absolute;
+      font-weight: bold;
+      width: 137px;
+      height: 23px;
+      left: 514px;
+      top: 165px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .show{
+      position: absolute;
+      font-weight: bold;
+      width: 250px;
+      height: 30px;
+      left: 720px;
+      top: 160px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #ccc;
+    }
+
+    .showcitytext{
+      position: absolute;
+      font-weight: bold;
+      width: 109px;
+      height: 23px;
+      left: 542px;
+      top: 210px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .showcity{
+      position: absolute;
+      font-weight: bold;
+      width: 250px;
+      height: 30px;
+      left: 720px;
+      top: 205px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #ccc;
+    }
+
+    .showpricetext{
+      position: absolute;
+      font-weight: bold;
+      width: 132px;
+      height: 23px;
+      left: 518px;
+      top: 255px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .showprice{
+      position: absolute;
+      font-weight: bold;
+      width: 250px;
+      height: 30px;
+      left: 720px;
+      top: 250px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #ccc;
+    }
+
+    .showdatetext{
+      position: absolute;
+      font-weight: bold;
+      width: 133px;
+      height: 23px;
+      left: 518px;
+      top: 300px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .showdate{
+      position: absolute;
+      font-weight: bold;
+      width: 250px;
+      height: 30px;
+      left: 720px;
+      top: 295px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #ccc;
+    }
+
+    .showtimetext{
+      font-weight: bold;
+      position: absolute;
+      width: 156px;
+      height: 23px;
+      left: 495px;
+      top: 345px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .showtime{
+      font-weight: bold;
+      position: absolute;
+      width: 250px;
+      height: 30px;
+      left: 720px;
+      top: 340px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #ccc;
+    }
+
+    .showseatstext{
+      font-weight: bold;
+      position: absolute;
+      width: 156px;
+      height: 23px;
+      left: 495px;
+      top: 390px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #EEEEEE;
+    }
+
+    .showseats{
+      font-weight: bold;
+      position: absolute;
+      width: 250px;
+      height: 30px;
+      left: 720px;
+      top: 385px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #ccc;
+    }
+
+    input[type=submit]{
+      position: absolute;
+      width: 180px;
+      height: 60px;
+      left: 690px;
+      top: 440px;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      background-color:#FFFFFF
+    }
+
+    .imgmask{
+      position: absolute;
+      width: 140px;
+      height: 135px;
+      left: 1275px;
+      top: 332px;
+      border-radius: 117.5px;
+    }
+
+    .lights{
+      position: absolute;
+      width: 137px;
+      height: 135px;
+      left: 175px;
+      top: 56px;
+    }
+
+    .back_button{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 27px;
+      top: 84px;
+    }
+
+    .backrec{
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      left: 22px;
+      top: 79px;
+      background:#EEEEEE;
+    }
+
+    .rec1{
+      position: absolute;
+      width: 1510px;
+      height: 225px;
+      left: calc(50% - 1440px/2);
+      top: calc(50% - 225px/2 + 287.5px);
+      background: #FFD369;
+    }
+
+    .rec2{
+      position: absolute;
+      width: 1510px;
+      height: 150px;
+      left: calc(50% - 1440px/2);
+      top: calc(50% - 150px/2 + 325px);
+      background: #EEEEEE;
+    }
+
+    .rec3{
+      position: absolute;
+      width: 1510px;
+      height: 75px;
+      left: calc(50% - 1440px/2);
+      top: calc(50% - 75px/2 + 362.5px);
+      background: #222831;
+    }
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <p class="title">ENTER SHOW DATA</p>
+
+    <form name="login" method="post" action="datasubmit.php">
+    <p>
+      <label class="showtext">Show Name</label>
+      <input type="text" class="show" name="show" id="show">
+    </p>
+    <p>
+      <label class="showcitytext">Show City</label>
+      <input type="text" class="showcity" name="showcity" id="showcity">
+    </p>
+    <p>
+      <label class="showpricetext">Show Price</label>
+      <input type="number" class="showprice" name="showprice" id="showprice">
+    </p>
+    <p>
+      <label class="showdatetext">Show Date</label>
+      <input type="date" class="showdate" name="showdate" id="showdate">
+    </p>
+    <p>
+      <label class="showtimetext">Show Timings</label>
+      <input type="time" class="showtime" name="showtime" id="showtime">
+    </p>
+    <p>
+      <label class="showseatstext">No. Of Seats</label>
+      <input type="text" class="showseats" name="showseats" id="showseats">
+    </p>
+
+    <p class="submit">
+      	<input type="submit" id="btn" value="SUBMIT">
+    </p>
+    </form>
+
+    <img class="imgmask" src="theatre-mask.png">
+    <div class="backrec"></div>
+    <a href="main.html">
+      <img class="back_button" src="button.png">
+    </a>
+    <img class="lights" src="spotlights.png">
+    <div class="rec1"></div>
+    <div class="rec2"></div>
+    <div class="rec3"></div>
+
+  </body>
+</html>

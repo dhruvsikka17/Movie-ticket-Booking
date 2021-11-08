@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <style media="screen">
+    body {
+      position: relative;
+      width: 1440px;
+      height: 740px;
+      background: #393E46;
+    }
+    .title{
+      position: absolute;
+      width: 290px;
+      height: 23px;
+      left: 620px;
+      top: 70px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: right;
+      text-decoration-line: underline;
+      color: #EEEEEE;
+    }
+
+    .imgmask{
+      position: absolute;
+      width: 140px;
+      height: 135px;
+      left: 1275px;
+      top: 332px;
+      border-radius: 117.5px;
+    }
+
+    .lights{
+      position: absolute;
+      width: 137px;
+      height: 135px;
+      left: 175px;
+      top: 56px;
+    }
+
+    .back_button{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 27px;
+      top: 84px;
+    }
+
+    .backrec{
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      left: 22px;
+      top: 79px;
+      background:#EEEEEE;
+    }
+
+    .rec1{
+      position: absolute;
+      width: 1510px;
+      height: 225px;
+      left: calc(50% - 1440px/2);
+      top: calc(50% - 225px/2 + 287.5px);
+      background: #FFD369;
+    }
+
+    .rec2{
+      position: absolute;
+      width: 1510px;
+      height: 150px;
+      left: calc(50% - 1440px/2);
+      top: calc(50% - 150px/2 + 325px);
+      background: #EEEEEE;
+    }
+
+    .rec3{
+      position: absolute;
+      width: 1510px;
+      height: 75px;
+      left: calc(50% - 1440px/2);
+      top: calc(50% - 75px/2 + 362.5px);
+      background: #222831;
+    }
+
+    input[type=text],input[type=email],input[type=tel], select,option {
+      width: 100%;
+      font-family: Quicksand;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 2px;
+      margin-bottom: 5px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      font-family: Quicksand;
+      font-weight: bold;
+      font-size: 22px;
+      background-color: white;
+      width: 100%;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: gray;
+      color:#FFD369;
+    }
+
+    .container {
+      display: inline-block;
+      position: absolute;
+      font-family: Quicksand;
+      font-weight: bold;
+      top: 150px;
+      left: 350px;
+      color: white;
+      border-radius: 5px;
+      padding: 20px;
+      width: 800px;
+    }
+
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+    <p class="title">SEAT BOOKING</p>
+    <div class="container">
+      <form method="POST" action="seats.php">
+        <label>FULL NAME</label>
+        <input type="text" name="name" placeholder="Your Name">
+
+        <label>EMAIL</label>
+        <br>
+        <input type="email" name="email" placeholder="Your Email ID">
+
+        <br>
+
+        <label>MOBILE NO.</label>
+        <br>
+        <input type="tel" name="phone" placeholder="Your Mobile Number">
+
+        <br>
+
+        <label>NO. OF SEATS</label>
+        <select name="seats">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <br> <br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+    <img class="imgmask" src="theatre-mask.png">
+    <div class="backrec"></div>
+    <a href="main.html">
+      <img class="back_button" src="button.png">
+    </a>
+    <img class="lights" src="spotlights.png">
+    <div class="rec1"></div>
+    <div class="rec2"></div>
+    <div class="rec3"></div>
+
+  </body>
+</html>
