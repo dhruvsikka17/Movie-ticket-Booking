@@ -6,4 +6,4 @@ consumers.
 Aims toprovide a booking service to help customers find quality entertainment for any
 event/movie they may be having.
 <br><br>
-Languages Used: HTML,CSS,PHP,MySQL and also includes BI Dashboard for the same made with PowerBI 
+Languages Used: HTML, CSS, PHP, MySQL and also includes BI Dashboard for the same made with PowerBI 
